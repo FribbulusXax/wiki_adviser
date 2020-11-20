@@ -10,5 +10,6 @@ def get_link():
 st.title("Looking for an interesting or weird article from Wikipedia?")
 if st.button("Yep!"):
     #webbrowser.open_new_tab(str(get_link()))
-    link = '[click me](str(get_link()))'
+    url = str(get_link())
+    link = '[click me](url)'
     st.markdown(link, unsafe_allow_html=True)
