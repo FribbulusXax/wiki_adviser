@@ -13,8 +13,8 @@ def get_title(link):
     soup = BeautifulSoup(req.content, 'html.parser')
     return(soup.find('h1').get_text())
 
-st.title("Looking for an interesting or weird article from Wikipedia?")
-if st.button("Yep!"):
+st.title("Хотите прочитать интересную или странненькую статью из Википедии?")
+if st.button("Ага!"):
     url = str(get_link())
 
     link = '['+ get_title(url) +'](' + url + ')'
